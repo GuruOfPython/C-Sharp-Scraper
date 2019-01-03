@@ -28,56 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.txtResults = new System.Windows.Forms.RichTextBox();
+            this.btnOpenBrowser = new System.Windows.Forms.Button();
+            this.btnScrap = new System.Windows.Forms.Button();
+            this.btnExit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // richTextBox1
+            // txtResults
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(40, 12);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(503, 245);
-            this.richTextBox1.TabIndex = 0;
-            this.richTextBox1.Text = "";
+            this.txtResults.Location = new System.Drawing.Point(40, 12);
+            this.txtResults.Name = "txtResults";
+            this.txtResults.Size = new System.Drawing.Size(503, 245);
+            this.txtResults.TabIndex = 0;
+            this.txtResults.Text = "";
             // 
-            // button1
+            // btnOpenBrowser
             // 
-            this.button1.Location = new System.Drawing.Point(40, 275);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 37);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Open Browser";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnOpenBrowser.Location = new System.Drawing.Point(40, 275);
+            this.btnOpenBrowser.Name = "btnOpenBrowser";
+            this.btnOpenBrowser.Size = new System.Drawing.Size(151, 37);
+            this.btnOpenBrowser.TabIndex = 1;
+            this.btnOpenBrowser.Text = "Open Browser";
+            this.btnOpenBrowser.UseVisualStyleBackColor = true;
+            this.btnOpenBrowser.Click += new System.EventHandler(this.btnOpenBrowser_Click);
             // 
-            // button2
+            // btnScrap
             // 
-            this.button2.Location = new System.Drawing.Point(216, 275);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(151, 37);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Start Scraping";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnScrap.Location = new System.Drawing.Point(216, 275);
+            this.btnScrap.Name = "btnScrap";
+            this.btnScrap.Size = new System.Drawing.Size(151, 37);
+            this.btnScrap.TabIndex = 1;
+            this.btnScrap.Text = "Start Scraping";
+            this.btnScrap.UseVisualStyleBackColor = true;
+            this.btnScrap.Click += new System.EventHandler(this.btnScrap_Click);
             // 
-            // button3
+            // btnExit
             // 
-            this.button3.Location = new System.Drawing.Point(392, 275);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(151, 37);
-            this.button3.TabIndex = 1;
-            this.button3.Text = "button1";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnExit.Location = new System.Drawing.Point(392, 275);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(151, 37);
+            this.btnExit.TabIndex = 1;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(583, 327);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.btnScrap);
+            this.Controls.Add(this.btnOpenBrowser);
+            this.Controls.Add(this.txtResults);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -87,10 +90,10 @@
 
         #endregion
 
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.RichTextBox txtResults;
+        private System.Windows.Forms.Button btnOpenBrowser;
+        private System.Windows.Forms.Button btnScrap;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
